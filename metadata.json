@@ -1,0 +1,6 @@
+{
+  "name": "Silver TechNova '26 - 25th Jubilee Tech Fest",
+  "description": "Technical Symposium 2K26 - The 25th Silver Jubilee Inter-Collegiate Technical Fest featuring CSE, ISE, ECE, & EEE competitions, real-time registration tracking, email verification, SMS/email notifications, and administrator dashboards.",
+  "requestFramePermissions": [],
+  "majorCapabilities": ["MAJOR_CAPABILITY_SERVER_SIDE_GEMINI_API"]
+}

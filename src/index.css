@@ -1,0 +1,174 @@
+@import "tailwindcss";
+
+@layer base {
+  body {
+    font-family: 'Plus Jakarta Sans', system-ui, -apple-system, sans-serif;
+  }
+  
+  h1, h2, h3, .font-display {
+    font-family: 'Syne', 'Cabinet Grotesk', 'Plus Jakarta Sans', sans-serif;
+  }
+
+  code, kbd, samp, pre, .font-mono {
+    font-family: 'JetBrains Mono', monospace;
+  }
+
+  .font-syncopate {
+    font-family: 'Syncopate', sans-serif;
+  }
+
+  .font-syne {
+    font-family: 'Syne', sans-serif;
+  }
+
+  .font-unbounded {
+    font-family: 'Unbounded', sans-serif;
+  }
+
+  .font-orbitron {
+    font-family: 'Orbitron', sans-serif;
+  }
+
+  .font-michroma {
+    font-family: 'Michroma', sans-serif;
+  }
+
+  .font-pixel {
+    font-family: 'Press Start 2P', monospace;
+  }
+
+  .font-silkscreen {
+    font-family: 'Silkscreen', monospace;
+  }
+}
+
+/* Voxel Pixel Block Text Effect */
+.voxel-pixel-title {
+  font-family: 'Press Start 2P', monospace;
+  background: linear-gradient(180deg, #FFFFFF 0%, #D4F4FF 25%, #60CDFF 50%, #0088FF 80%, #0044B2 100%);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  filter: drop-shadow(0 0 18px rgba(0, 200, 255, 0.75)) drop-shadow(0 0 45px rgba(0, 140, 255, 0.45));
+  image-rendering: pixelated;
+}
+
+.voxel-block-grid-overlay {
+  background-size: 8px 8px;
+  background-image: 
+    linear-gradient(to right, rgba(0, 30, 60, 0.5) 1px, transparent 1px),
+    linear-gradient(to bottom, rgba(0, 30, 60, 0.5) 1px, transparent 1px);
+}
+
+.symposium-neon-text {
+  background: linear-gradient(180deg, #FFFFFF 0%, #AEE7FF 40%, #38BDF8 100%);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  filter: drop-shadow(0 0 12px rgba(56, 189, 248, 0.9)) drop-shadow(0 0 30px rgba(14, 165, 233, 0.5));
+}
+
+/* Hyper-Reflective Metallic Chrome Utilities */
+.metallic-chrome-text {
+  background: linear-gradient(
+    180deg,
+    #FFFFFF 0%,
+    #F4FAFE 16%,
+    #D0E5F5 32%,
+    #688FA8 47%,
+    #FFFFFF 50%,
+    #F0F7FB 54%,
+    #4F748D 76%,
+    #B7D6EA 90%,
+    #FFFFFF 100%
+  );
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  filter: drop-shadow(0 2px 24px rgba(56, 189, 248, 0.45));
+}
+
+.metallic-platinum-text {
+  background: linear-gradient(
+    175deg,
+    #FFFFFF 0%,
+    #F6FAFD 14%,
+    #BDDCF0 30%,
+    #5A839E 46%,
+    #FFFFFF 49%,
+    #E4F2FA 55%,
+    #416982 74%,
+    #C4E0F0 88%,
+    #FFFFFF 100%
+  );
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  filter: drop-shadow(0 2px 24px rgba(168, 85, 247, 0.45));
+}
+
+@keyframes metallic-gleam {
+  0% {
+    transform: translateX(-160%) skewX(-30deg);
+  }
+  40%, 100% {
+    transform: translateX(280%) skewX(-30deg);
+  }
+}
+
+.animate-metallic-gleam {
+  animation: metallic-gleam 4s cubic-bezier(0.4, 0, 0.2, 1) infinite;
+}
+
+/* Custom Neon and Glow Utilities */
+.neon-glow-cyan {
+  box-shadow: 0 0 25px -5px rgba(6, 182, 212, 0.4), 0 0 10px -2px rgba(6, 182, 212, 0.3);
+}
+
+.neon-glow-purple {
+  box-shadow: 0 0 25px -5px rgba(168, 85, 247, 0.4), 0 0 10px -2px rgba(168, 85, 247, 0.3);
+}
+
+.neon-glow-emerald {
+  box-shadow: 0 0 25px -5px rgba(16, 185, 129, 0.4), 0 0 10px -2px rgba(16, 185, 129, 0.3);
+}
+
+.neon-glow-amber {
+  box-shadow: 0 0 25px -5px rgba(245, 158, 11, 0.4), 0 0 10px -2px rgba(245, 158, 11, 0.3);
+}
+
+.cyber-grid {
+  background-size: 40px 40px;
+  background-image: 
+    linear-gradient(to right, rgba(255, 255, 255, 0.03) 1px, transparent 1px),
+    linear-gradient(to bottom, rgba(255, 255, 255, 0.03) 1px, transparent 1px);
+}
+
+.cyber-dots {
+  background-image: radial-gradient(rgba(255, 255, 255, 0.08) 1px, transparent 1px);
+  background-size: 24px 24px;
+}
+
+/* Glassmorphic border */
+.glass-panel {
+  background: rgba(15, 23, 42, 0.75);
+  backdrop-filter: blur(16px);
+  -webkit-backdrop-filter: blur(16px);
+  border: 1px solid rgba(255, 255, 255, 0.08);
+}
+
+/* Custom scrollbars */
+::-webkit-scrollbar {
+  width: 6px;
+  height: 6px;
+}
+
+::-webkit-scrollbar-track {
+  background: #020617;
+}
+
+::-webkit-scrollbar-thumb {
+  background: #1e293b;
+  border-radius: 9999px;
+}
+
+::-webkit-scrollbar-thumb:hover {
+  background: #06b6d4;
+}
+
